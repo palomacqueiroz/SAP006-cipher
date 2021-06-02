@@ -1,1 +1,9 @@
 /* css */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-voice {
+    width: 150px;
+}
