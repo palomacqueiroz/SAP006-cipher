@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -11,29 +11,52 @@
 
 <body>
   <header>
-    <div id="root">
-
-      <img class="img-voice" src="./img/logo.png" alt="logo, imagem de um rosto e timbre de voz.">
-
-      <h1>VOICE</h1>
-
+    <div id="menu-nav">
+      <img class="img-voice" src="./img/logo.png" alt="rosto e timbre de voz.">
       <nav>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Cifrar</a></li>
-          <li><a href="">Decifrar</a></li>
+          <li><a href="#voice">Informações</a></li>
+          <li><a href="">Criptografar</a></li>
+          <li><a href="">Descriptografar</a></li>
         </ul>
       </nav>
-
     </div>
   </header>
-
   <main>
-    <div>
-      <h2>Informações:</h2>
-      <p></p>
-    </div>  
+    <section class="main-inf">
+      <h1 class="voice">VOICE</h1>
+      <p>É uma aplicação criada para permitir que funcionários sintam-se seguros ao
+        fazerem denúncias de compartamentos inapropriados, como discriminação e assédio,
+        na empresa onde trabalha.</p>
+      <p>O aplicativo pode ser utilizado no desktop ou, futuramente, instalado nas
+        plataformas Android e IOS, permite que as mensagens sejam criptografadas e
+        descriptografadas apenas por quem possui a chave secreta.</p>
+      <h3>Como utilizar?</h3>
+    </section>
+    <section>
+      <h4>Para criptografar a mensagem:</h4>
+      <ol>
+        <li>Na página principal, clique em "Criptografar".</li>
+        <li>Selecione um número para ser a chave secreta de sua mensagem.(Guarde com você.)</li>
+        <li>Digite a mensagem que deseja codificar na caixa de texto em branco.</li>
+        <li>Pressione "Criptografar".</li>
+        <li>Caso deseje, copie a mensagem criptografada clicando no botão "Copiar".</li>
+        <li>Ao clicar no botão enviar, sua mensagem será enviada diretamente para a equipe responsável na empresa.</li>
+      </ol>
+      <h4>Para descriptografar a mensagem:</h4>
+      <ol>
+        <li>Na página principal, clique em "Descriptografar".</li>
+        <li>Selecione a chave de sua mensagem.(número usado para criptografar).</li>
+        <li>Digite a mensagem que deseja descriptografar na caixa de texto em branco.</li>
+        <li>Pressione "Descriptografar".</li>
+        <li>Caso deseje, copie a mensagem descriptografada clicando no botão "Copiar".</li>
+      </ol>
+    </section>
   </main>
+
+  <footer>
+    <p class="copyright"> &copy; Copyright Voice - 2021 </p>
+  </footer>
 
   <script src="index.js" type="module"></script>
 </body>

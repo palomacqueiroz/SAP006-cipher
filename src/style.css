@@ -2,8 +2,50 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(189, 196, 197);
 }
 
-.img-voice {
-    width: 150px;
+/*Barra de Navegação*/
+
+.img-voice {    
+    width: 130px;
+    margin: 15px;    
+}
+.menu-nav {
+    position: relative;
+    display: inline-block;    
+}
+
+.voice {    
+    color: rgb(22, 33, 95);
+    text-align: center;  
+    font-size:xx-large;  
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 10px;
+    margin: 0 20px 0 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px 0 20px;
+}
+
+/*Conteúdo Principal*/
+
+.main-inf {
+    margin: 20px;
+    text-align:justify
+    
+}
+
+
+/*footer*/
+
+.copyright {
+    text-align: center;
+    padding: 20px;
 }
