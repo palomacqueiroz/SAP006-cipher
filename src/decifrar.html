@@ -15,7 +15,7 @@
             <img class="img-voice" src="./img/logo.png" alt="rosto e timbre de voz.">
             <nav>
                 <ul>
-                    <li><a href="./index.html">Informações</a></li>
+                    <li><a href="./index.html">VOICE</a></li>
                     <li><a href="./cifrar.html">Criptografar</a></li>
                 </ul>
             </nav>
@@ -24,28 +24,27 @@
     <main>
         <section id="form">
             <form>
-
-                <select number="numbers">
+                <select class="key" number="numbers">
                     <option value="numbers">Insira sua chave secreta.</option>
                     <option value="one">1</option>
                     <option value="two">2</option>
                     <option value="tree">3</option>
-                    <option value="four">3</option>
-                    <option value="five">3</option>
-                    <option value="six">3</option>
-                    <option value="seven">3</option>
-                    <option value="eight">3</option>
-                    <option value="nine">3</option>
-                    <option value="ten">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                    <option value="seven">7</option>
+                    <option value="eight">8</option>
+                    <option value="nine">9</option>
+                    <option value="ten">10</option>
                 </select>
 
-                <label for="mensagem:">Digite sua mensagem</label><br>
-                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                <label for="mensagem:">Digite sua mensagem</label>
+                <textarea class="form-control" cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
                 <button id="decifrar" type="submit">Descriptografar</button>
 
-                <label for="msg-decifrada">Mensagem Descriptografada</label><br>
-                <textarea cols="70" rows="10" id="msg-cifrada" class="input-padrao" required></textarea>
+                <label for="msg-decifrada">Mensagem Descriptografada</label>
+                <textarea class="form-control" cols="70" rows="10" id="msg-cifrada" class="input-padrao" required></textarea>
 
             </form>
         </section>
@@ -54,6 +53,8 @@
     <footer>
         <p class="copyright"> &copy; Copyright Voice by Paloma Queiroz - 2021 </p>
     </footer>
+
+    <script src="index.js" type="module"></script>
 </body>
 
 </html>

@@ -3,29 +3,39 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(189, 196, 197);
+    color: rgb(32, 36, 56);
+    margin: 0;
 }
 
 /*Barra de Navegação*/
 
-.img-voice {    
-    width: 130px;
-    margin: 15px;    
-}
-.menu-nav {
-    position: relative;
-    display: inline-block;    
+#menu-nav {
+    /*border: 2px solid rgb(10, 3, 119); 
+    border-radius: 5px;*/
+    background-color: rgb(122, 141, 163);
 }
 
-.voice {    
-    color: rgb(22, 33, 95);
-    text-align: center;  
-    font-size:xx-large;  
+.img-voice {    
+    width: 12%;
+    margin: 1.59%;    
+}
+
+a {
+    text-decoration: none;
+    color: turquoise;
+    font-weight: bold;
+    text-transform: uppercase; /*letra maiscula*/
+}
+
+a:hover {
+    background-color: teal;
+    padding: 10px;
 }
 
 nav {
     position: absolute;
-    top: 110px;
-    right: 10px;
+    top: 11.70%;
+    right: 1.06%;
     margin: 0 20px 0 0;
 }
 
@@ -36,22 +46,111 @@ nav li {
 
 /*Conteúdo Principal*/
 
-.main-inf {
-    margin: 20px;
-    text-align:justify
-    
+h1 {    
+    color: rgb(22, 33, 95);
+    text-align: center;  
+    font-size:xx-large;  
 }
 
+.main-inf {
+    margin: 2.12%;
+    text-align:justify;    
+}
+
+h3 {
+    text-align: left;    
+    font-weight: bolder;
+}
+
+ol li {
+    line-height: 20px;
+}
+
+h4 {
+    margin-left: 20px;
+}
 
 /*footer*/
 
 .copyright {
     text-align: center;
-    padding: 20px;
+    padding: 2.12%;
+    /*border-radius: 5px;*/
+    background-color: rgb(122, 141, 163);
+    margin: 0;
 }
-
 
 /*Página Cifrar*/
 
+form {
+    margin-left: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.key {
+    height: 20px;
+    margin-bottom: 10px;
+    cursor:row-resize;
+}
+
+form label {
+    width: 350px;
+    padding: 5px;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(37, 37, 65);   
+}
+
+#cifrar {
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;  
+    margin-left: 10px;  
+}
+
+#cifrar:hover {
+    background-color: teal;
+    padding: 10px;
+} 
+
+textarea {
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.form-control
+{
+    max-height: 219px;
+    max-width: 70%;
+}
+
+.send {
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;    
+}
+
+.send:hover {
+    background-color: teal;
+    padding: 10px;
+}
+
 
 /*Página Decifrar*/
+
+#decifrar {
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#decifrar:hover {
+    background-color: teal;
+    padding: 10px;
+}
