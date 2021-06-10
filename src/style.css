@@ -34,7 +34,7 @@ nav {
     position: absolute;
     top: 11.70%;
     right: 1.06%;
-    margin: 0 20px 0 0;
+    margin: 0 2.12% 0 0;
 }
 
 nav li {
@@ -55,17 +55,19 @@ h1 {
     text-align:justify;    
 }
 
-h3 {
+#how-use {
     text-align: left;    
     font-weight: bolder;
+    margin-left: 2.12%;
 }
 
 ol li {
     line-height: 20px;
+    margin-left: 10px;
 }
 
 h4 {
-    margin-left: 20px;
+    margin-left: 2.12%;
 }
 
 /*footer*/
@@ -81,12 +83,12 @@ h4 {
 
 form {
     margin-left: 400px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2.12%;
+    margin-bottom: 2.12%;
 }
 
-#key {
-    height: 20px;
+#secret-key {
+    height: 2.12%;
     margin-bottom: 15px;
     cursor:row-resize;
 }
@@ -99,7 +101,7 @@ form label {
     color: rgb(37, 37, 65);   
 }
 
-#cifrar, #decifrar, .send {
+#encrypt, #decrypt, .send {
     width: 150px;
     height: 30px;
     cursor: pointer;
@@ -107,7 +109,7 @@ form label {
     margin-left: 10px;  
 }
 
-#cifrar:hover, #decifrar:hover, .send:hover {
+#encrypt:hover, #decrypt:hover, .send:hover {
     background-color: teal;
     padding: 10px;
     color: white;
