@@ -1,28 +1,34 @@
 const cipher = {
 
-  /* Daniel - ((codigoDaLetraASC - codigoDaLetra + deslocamento) % tamDoAlfabeto) + codigoDaLetra 
-  string.charCodeAt(num da letra no alfabeto)
-  string.fromCharCodeAt
+  encode: function encode (offset, string) {
+    let newMsg = ""
+    let maiuscula = string.toUpperCase()
 
-  transformar offset em número (number ou parseInt - inteiro)
+    for (let i = 0; i < string.length; i++) {
+    maiuscula = string.charCodeAt(i)  
+    let novaLetra = String.fromCharCode(((maiuscula -65+ offset)%26)+ 65)
+    newMsg = newMsg + novaLetra/*.toUpperCase() */  
 
-    encrypt.charCodeAt(1)
-
-    funções para encriptar e desencriptar mensagem.
-
-        TESTE 
-    function encode(offset, string) {
-        let mensagem = string.charCodeAt()   // transforma letra em cod ASC (n)
-        let novoCodigo = ((mensagem - 65+ offset)%26)+ 65
-        let novaLetra = String.fromCharCode(novoCodigo) // transforma cod ASC em letra
     
-        console.log(novoCodigo)
-      }
-    
-      encode (10, "C")
-  */
+    }
 
   
-};
+  return newMsg  
+      
+},
+
+decode: function decode (offset, string) {
+  let newMsg = ""
+
+  for (let i = 0; i < string.length; i++) {
+  let letra = string.charCodeAt(i)  
+  let novaLetra = String.fromCharCode(((letra + 65 - offset)%26)+ 65)
+  newMsg = newMsg + novaLetra  
+  } 
+  return newMsg
+  
+}
+
+}
 
 export default cipher;

@@ -118,7 +118,7 @@ form label {
 .msg-field {
     resize: none;
     border-radius: 10px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 
