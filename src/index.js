@@ -4,12 +4,12 @@ import cipher from './cipher.js';
 
 /* Aparecer alerta de como utilizar a pagina */
 
-/*let information = document.getElementById("message")
+let information = document.getElementById("message")
 information.addEventListener("click", warning) 
 
 function warning(){
     alert ("Por favor, informe no conteúdo da mensagem: \n Seu nome \n Nome e setor do autor \n Escreva números por extenso");
-}*/
+}
 
 /* Pegar as informações do campo mensagem e aparecer no campo mensagem criptografada */
 
@@ -18,31 +18,14 @@ let key = document.getElementById("secret-key") /* chave secreta (deslocamento) 
 let output = document.getElementById("encrypt-msg") /*campo retorno msg criptografa*/
 const btnEncrypt = document.getElementById("encrypt") /*Ao clicar no botão criptografar irá cripto msgm*/
 
-function toEncrypt() {
+function toEncrypt(e) {
+    e.preventDefault();
     let textToEncrypt = msg.value
     let offset = Number(key.value)
     return output.innerText = cipher.encode(offset, textToEncrypt)
 }
-
 btnEncrypt.addEventListener("click", toEncrypt) 
 
-
-/* Pegar as informações do campo mensagem e aparecer no campo mensagem descriptografada */
-
-let dMsg = document.getElementById("dmessage")
-let dKey = document.getElementById("secret-keyD")
-let outputD = document.getElementById("decrypt-msg")
-const btnDecrypt = document.getElementById("decrypt")
-
-function toDecrypt() {
-    let decrypto = dMsg.value
-    let offsetD = Number(dKey.value)
-    return outputD.innerText = cipher.decode(offsetD, decrypto)
-}
-btnDecrypt.addEventListener("click", toDecrypt)
-
-
-/*buscar preventDefault() */
 
 
 

@@ -63,16 +63,14 @@ const cipher = {
         newMsg += string.charAt(i);
       }
 
-      else if (string.charCodeAt(i) == 44) {    /*virgula || retornar ele mesmo*/
+      else if (string.charCodeAt(i) == 44) {  /*virgula || retornar ele mesmo*/
         newMsg += string.charAt(i);
       }
       
       else if (string.charCodeAt(i) == 64) {  /*arroba || retornar ele mesmo*/
         newMsg += string.charAt(i);
       }
-
-      /*let newLetter = String.fromCharCode(((letter - 90 - offset) % 26) + 90)
-      newMsg = newMsg + newLetter*/
+      
     }
     return newMsg
 
