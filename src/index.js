@@ -13,12 +13,12 @@ function warning(){
 
 /* Pegar as informações do campo mensagem e aparecer no campo mensagem criptografada */
 
-let msg= document.getElementById("message") /* campo mensagem armazenado em encrypt*/
+let msg= document.getElementById("message") /* campo mensagem armazenado em msg*/
 let key = document.getElementById("secret-key") /* chave secreta (deslocamento) armazenada*/
 let output = document.getElementById("encrypt-msg") /*campo retorno msg criptografa*/
 
 let dMsg = document.getElementById("dmessage")
-let key2 = document.getElementById("secretKey")
+let dKey = document.getElementById("secret-keyD")
 let outputD = document.getElementById("decrypt-msg")
 
 const btnEncrypt = document.getElementById("encrypt") /* Ao clicar no botão criptografar irá cripto msgm */
@@ -35,10 +35,14 @@ function toEncrypt() {
 
 function toDecrypt() {
     let decrypto = dMsg.value    
-    let offset = Number(key2.value)
-    return outputD.innerText = cipher.decode(offset,decrypto)    
+    let offsetD = Number(dKey.value)    
+    return outputD.innerText = cipher.decode(offsetD,decrypto)  
+
+    /*let saida = cipher.decode(offsetD,decrypto) 
+    document.getElementById("decrypt-msg").innerHTML = saida*/
    
 }
+
 
 /*buscar preventDefault() */
 
