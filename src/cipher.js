@@ -25,7 +25,15 @@ const cipher = {
         newMsg += string.charAt(i);
       }
 
+      else if (string.charCodeAt(i) == 33) {  /*exclamação || retornar ele mesmo*/
+        newMsg += string.charAt(i);
+      }
+
       else if (string.charCodeAt(i) == 44) {  /*virgula || retornar ele mesmo*/
+        newMsg += string.charAt(i);
+      }
+
+      else if (string.charCodeAt(i) == 64) {  /*arroba || retornar ele mesmo*/
         newMsg += string.charAt(i);
       }
 
@@ -51,7 +59,15 @@ const cipher = {
         newMsg += string.charAt(i);
       }
 
+      else if (string.charCodeAt(i) == 33) {  /*exclamação || retornar ele mesmo*/
+        newMsg += string.charAt(i);
+      }
+
       else if (string.charCodeAt(i) == 44) {    /*virgula || retornar ele mesmo*/
+        newMsg += string.charAt(i);
+      }
+      
+      else if (string.charCodeAt(i) == 64) {  /*arroba || retornar ele mesmo*/
         newMsg += string.charAt(i);
       }
 
