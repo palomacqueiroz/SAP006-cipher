@@ -1,8 +1,6 @@
 
 import cipher from './cipher.js';
 
-/* Pegar as informações do campo mensagem e aparecer no campo mensagem descriptografada*/
-
 let dMsg = document.getElementById("dmessage")
 let dKey = document.getElementById("secret-key")
 let outputD = document.getElementById("decrypt-msg")

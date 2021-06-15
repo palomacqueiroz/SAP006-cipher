@@ -22,7 +22,7 @@ a {
     text-decoration: none;
     color: turquoise;
     font-weight: bold;
-    text-transform: uppercase; /*letra maiscula*/
+    text-transform: uppercase; 
 }
 
 a:hover {
@@ -72,14 +72,6 @@ h4, h3 {
     font-weight: bolder;
 }
 
-/*footer*/
-
-.copyright {
-    text-align: center;
-    padding: 2.12%;    
-    background-color: rgb(122, 141, 163);
-    margin: 0;
-}
 
 /*Página Cifrar | Decifrar */
 
@@ -120,6 +112,15 @@ form label {
 .msg-field {
     resize: none;
     border-radius: 10px;    
+}
+
+/*footer*/
+
+.copyright {
+    text-align: center;
+    padding: 2.12%;    
+    background-color: rgb(122, 141, 163);
+    margin: 0;
 }
 
 /*@media only screen and (max-device-width: 900px) {

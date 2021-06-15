@@ -2,43 +2,31 @@ const cipher = {
 
   encode: function encode(offset, string) {
 
-    let newMsg = "" /* recebe msg que será digitada */
+    let newMsg = ""
 
-    if ((typeof offset !== "number") || (typeof string !== "string")) { /* representa um erro de quando um valor não é do tipo esperado*/
+    if ((typeof offset !== "number") || (typeof string !== "string")) {
       throw new TypeError
     }
-    
-    for (let i = 0; i < string.length; i++) {  /*laços */
+
+    for (let i = 0; i < string.length; i++) {
 
       let letter = string.charCodeAt(i)
 
-      if (letter >= 65 && letter <= 90) { /*maiscula*/
+      if (letter >= 65 && letter <= 90) {
         newMsg += String.fromCharCode((letter - 65 + offset) % 26 + 65);
-      }
-
-      else if (letter >= 97 && letter <= 122) { /*minuscula*/
+      } else if (letter >= 97 && letter <= 122) {
         newMsg += String.fromCharCode((letter - 97 + offset) % 26 + 97);
-      }
-
-      else if (string.charCodeAt(i) == 32) {  /*espaço || retornar ele mesmo*/
+      } else if (string.charCodeAt(i) == 32) {
+        newMsg += string.charAt(i);
+      } else if (string.charCodeAt(i) == 33) {
+        newMsg += string.charAt(i);
+      } else if (string.charCodeAt(i) == 44) {
+        newMsg += string.charAt(i);
+      } else if (string.charCodeAt(i) == 64) {
         newMsg += string.charAt(i);
       }
-
-      else if (string.charCodeAt(i) == 33) {  /*exclamação || retornar ele mesmo*/
-        newMsg += string.charAt(i);
-      }
-
-      else if (string.charCodeAt(i) == 44) {  /*virgula || retornar ele mesmo*/
-        newMsg += string.charAt(i);
-      }
-
-      else if (string.charCodeAt(i) == 64) {  /*arroba || retornar ele mesmo*/
-        newMsg += string.charAt(i);
-      }
-
     }
-    return newMsg  
-    
+    return newMsg
   },
 
   decode: function decode(offset, string) {
@@ -52,33 +40,21 @@ const cipher = {
     for (let i = 0; i < string.length; i++) {
       let letter = string.charCodeAt(i)
 
-      if (letter >= 65 && letter <= 90) { /*maiscula*/
-        newMsg += String.fromCharCode((letter - 90 - offset) % 26 + 90); /*ultimo caracter*/
-      }
-
-      else if (letter >= 97 && letter <= 122) { /*minuscula*/
-        newMsg += String.fromCharCode((letter - 122 - offset) % 26 + 122); /*ultimo caracter*/
-      }
-
-      else if (string.charCodeAt(i) == 32) {  /*espaço || retornar ele mesmo*/
+      if (letter >= 65 && letter <= 90) { 
+        newMsg += String.fromCharCode((letter - 90 - offset) % 26 + 90); 
+      } else if (letter >= 97 && letter <= 122) { 
+        newMsg += String.fromCharCode((letter - 122 - offset) % 26 + 122); 
+      } else if (string.charCodeAt(i) == 32) { 
+        newMsg += string.charAt(i);
+      } else if (string.charCodeAt(i) == 33) {  
+        newMsg += string.charAt(i);
+      } else if (string.charCodeAt(i) == 44) {  
+        newMsg += string.charAt(i);
+      } else if (string.charCodeAt(i) == 64) { 
         newMsg += string.charAt(i);
       }
-
-      else if (string.charCodeAt(i) == 33) {  /*exclamação || retornar ele mesmo*/
-        newMsg += string.charAt(i);
-      }
-
-      else if (string.charCodeAt(i) == 44) {  /*virgula || retornar ele mesmo*/
-        newMsg += string.charAt(i);
-      }
-      
-      else if (string.charCodeAt(i) == 64) {  /*arroba || retornar ele mesmo*/
-        newMsg += string.charAt(i);
-      }
-      
     }
     return newMsg
-
   }
 
 };
