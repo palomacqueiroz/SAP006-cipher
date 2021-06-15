@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Criptografar</title>
+    <title>Descriptografar</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
             <nav>
                 <ul>
                     <li><a href="./index.html">VOICE</a></li>
-                    <li><a href="./decifrar.html">Descriptografar</a></li>
+                    <li><a href="./encrypt.html">Criptografar</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,18 +24,16 @@
     <main>
         <section>
             <form>
-                <label for="numbers"> Escolha sua chave secreta :</label>
+                <label for="numbers"> Escolha sua chave secreta:</label>
                 <input type="number" id="secret-key" name="numbers" min="1">
 
-                <label for="message">Digite sua mensagem</label>
-                <textarea id="message" class="msg-field" cols="70" rows="10" required></textarea>
-                
-                <button id="encrypt" type="button">Criptografar</button>
+                <label for="dmessage">Digite sua mensagem</label>
+                <textarea id="dmessage" class="msg-field" cols="70" rows="10" required></textarea>
 
-                <label for="encrypt-msg">Mensagem Criptografada</label>
-                <textarea id="encrypt-msg" class="msg-field" cols="70" rows="10" required></textarea>
+                <button id="decrypt" type="button">Descriptografar</button>
 
-                <input type="submit" value="Enviar Mensagem" class="send">
+                <label for="decrypt-msg">Mensagem Descriptografada</label>
+                <textarea id="decrypt-msg" class="msg-field" cols="70" rows="10" required></textarea>
             </form>
         </section>
     </main>
@@ -44,7 +42,7 @@
         <p class="copyright"> &copy; Copyright Voice by Paloma Queiroz - 2021 </p>
     </footer>
 
-    <script src="index.js" type="module"></script>
+    <script src="./decrypt.js" type="module"></script>
 </body>
 
 </html>

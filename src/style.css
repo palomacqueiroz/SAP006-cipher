@@ -48,6 +48,8 @@ h1 {
     color: rgb(22, 33, 95);
     text-align: center;  
     font-size:xx-large;  
+    font-weight: bolder;
+    margin-left: 2.12%;
 }
 
 .main-inf {
@@ -56,8 +58,7 @@ h1 {
 }
 
 #how-use {
-    text-align: left;    
-    font-weight: bolder;
+    text-align: left;   
     margin-left: 2.12%;
 }
 
@@ -66,8 +67,9 @@ ol li {
     margin-left: 10px;
 }
 
-h4 {
+h4, h3 {
     margin-left: 2.12%;
+    font-weight: bolder;
 }
 
 /*footer*/
@@ -79,7 +81,7 @@ h4 {
     margin: 0;
 }
 
-/*Página Cifrar*/
+/*Página Cifrar | Decifrar */
 
 form {
     margin-left: 400px;
@@ -120,7 +122,52 @@ form label {
     border-radius: 10px;    
 }
 
+/*@media only screen and (max-device-width: 900px) {
+    #menu-nav { 
+        width:100%; 
+    }
 
-/*Página Decifrar*/
+    .nav {
+        width: 100%;
+        display: flex;
+        font-size: medium;
+        margin: 0 0 70px 0;
+    }
 
- 
+    form label {
+        width: 100%;
+    }
+
+}*/
+
+@media only screen and (max-device-width: 700px) {
+
+    #menu-nav { 
+        width:100%; 
+        
+    }
+
+    .nav {
+        width: 100%;           
+        /*justify-content: baseline;  */          
+        font-size: medium;
+        text-align: left;
+        margin: 0 ;
+        color: blue;
+    }
+
+    h1 {
+        margin: 70px 40px 30px 40px;
+
+    }
+
+    .flex {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    
+
+}

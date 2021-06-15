@@ -4,12 +4,11 @@ const cipher = {
 
     let newMsg = "" /* recebe msg que será digitada */
 
-    /*  if (string == "" || string == null || offset == "" || offset == null) {
-       alert("Para funcionar precisamos da mensagem e da chave secreta.")
-       throw new TypeError("Some informations are missing:", "cipher.js", 6); /*ver do que se trata este número/*
-     } testes*/
-
-    for (let i = 0; i < string.length; i++) {     /*laços */
+    if ((typeof offset !== "number") || (typeof string !== "string")) { /* representa um erro de quando um valor não é do tipo esperado*/
+      throw new TypeError
+    }
+    
+    for (let i = 0; i < string.length; i++) {  /*laços */
 
       let letter = string.charCodeAt(i)
 
@@ -38,11 +37,17 @@ const cipher = {
       }
 
     }
-    return newMsg
+    return newMsg  
+    
   },
 
   decode: function decode(offset, string) {
+
     let newMsg = ""
+
+    if ((typeof offset !== "number") || (typeof string !== "string")) {
+      throw new TypeError
+    }
 
     for (let i = 0; i < string.length; i++) {
       let letter = string.charCodeAt(i)
