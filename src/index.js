@@ -1,5 +1,7 @@
 import cipher from './cipher.js';
 
+//console.log(cipher);
+
 let information = document.getElementById("message")
 information.addEventListener("click", warning) 
 
