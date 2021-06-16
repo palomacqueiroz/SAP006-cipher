@@ -3,15 +3,12 @@
 ## Índice
 
 * [1. VOICE](#1-voice)
-* [2. O que é a Cifra de César?](#2-O que é a Cifra de César?)
+* [2. Cifra de César](#2-cifra-de-cesar) 
 * [3. Usuários](#3-Usuários)
-* [4. Planejamento e Execução](#4-Planejamento e Execução)
-* [5. Interface UI e UX](#5-Interface UI e UX)
+* [4. Planejamento e Execução](#4-planejamento-e-execução)
+* [5. Interface UI e UX](#5-Interface-UI-e-UX)
 * [6. Testes](#6-Testes)
-* [7. Considerações técnicas](#7-considerações-técnicas)
-* [8. Guias, dicas e leituras
-  complementares](#8-guias-dicas-e-leituras-complementares)
-* [9. Checklist](#9-checklist)
+* [7. Objetivos de Aprendizagem](#7-objetivos-de-aprendizagem)
 
 ***
 
@@ -25,7 +22,7 @@ Nesta aplicação o usuário poderá cifrar e decifrar um texto indicando a chav
 secreta (_offset_) e enviar ao responsável, na empresa, por e-mail, através 
 de um botão.
 
-## 2. O que é a Cifra de César?
+## 2. Cifra de César
 
 Cifrar significa codificar. A [cifra de
 César](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar) é um dos primeiros
@@ -54,8 +51,8 @@ a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
 ## 3. Usuários
 
-Será utilizado por funcionários que desejam faz denúncia e para que não se sintam intimidados,
-com medo e deixem de falr por ter que ser pessoalmente, esta ferramenta cria um ambiente seguro
+Será utilizado por funcionários que desejam fazer denúncia, e para que não se sintam intimidados,
+com medo e deixem de falar por ter que ser pessoalmente, esta ferramenta cria um ambiente seguro
 onde é possível ter "voz" e denúnciar.
 
 ## 4. Planejamento e Execução
@@ -74,9 +71,30 @@ A interface permitir ao usuário:
 * Inserir uma mensagem (texto) para ser decifrada.
 * Ver o resultado da mensagem decifrada.
 
+A cor azul foi priorizada por que transmite tranquilidade, serenidade e harmonia.
+
+## Tela inicial
+
+Consta informações sobre o VOICE e como usar.
+
+*Foto
+
+## Telas CRIPTOGRAFAR e DESCRIPTOGRAFAR
+
+Em telas distintas, muito semelhantes, porém na tela criptografar é possível enviar a mensagem
+através de um botão diretamente para o responsável na empresa.
+
+*Foto
+
 ## 6. Testes
 
-## 5. Objetivos de Aprendizagem
+Foi exigido que os testes unitários cobrissem no mínimo 70% dos statements, functions e lines, 
+e um mínimo de 50% de branches.
+Voice passou nos testes como pode-se observar abaixo:
+
+***
+
+## 7. Objetivos de Aprendizagem
 
 ### HTML e CSS
 
