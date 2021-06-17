@@ -73,18 +73,14 @@ A interface permitir ao usuário:
 
 A cor azul foi priorizada por que transmite tranquilidade, serenidade e harmonia.
 
-## Tela inicial
+## Tela Inicial, CRIPTOGRAFAR e DESCRIPTOGRAFAR
 
-Consta informações sobre o VOICE e como usar.
-
-*Foto
-
-## Telas CRIPTOGRAFAR e DESCRIPTOGRAFAR
+A tela inicial contém informações sobre o VOICE e como usar.
 
 Em telas distintas, muito semelhantes, porém na tela criptografar é possível enviar a mensagem
 através de um botão diretamente para o responsável na empresa.
 
-*Foto
+<img src = "img/voiceOk.jpg">
 
 ## 6. Testes
 
@@ -92,7 +88,7 @@ Foi exigido que os testes unitários cobrissem no mínimo 70% dos statements, fu
 e um mínimo de 50% de branches.
 Voice passou nos testes como pode-se observar abaixo:
 
-***
+<img src = "img/testeVoice.png" >
 
 ## 7. Objetivos de Aprendizagem
 
