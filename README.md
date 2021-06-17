@@ -80,7 +80,7 @@ A tela inicial contém informações sobre o VOICE e como usar.
 Em telas distintas, muito semelhantes, porém na tela criptografar é possível enviar a mensagem
 através de um botão diretamente para o responsável na empresa.
 
-<img src = "img/voiceOk.jpg">
+![imagem das telas do VOICE](https://github.com/palomacqueiroz/SAP006-cipher/blob/main/voiceOk.jpg) 
 
 ## 6. Testes
 
@@ -88,7 +88,7 @@ Foi exigido que os testes unitários cobrissem no mínimo 70% dos statements, fu
 e um mínimo de 50% de branches.
 Voice passou nos testes como pode-se observar abaixo:
 
-<img src = "img/testeVoice.png" >
+![testes](https://github.com/palomacqueiroz/SAP006-cipher/blob/main/testeVoice.png)
 
 ## 7. Objetivos de Aprendizagem
 
